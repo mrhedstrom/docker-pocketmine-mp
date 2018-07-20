@@ -7,7 +7,8 @@ RUN apt-get upgrade -y
 RUN apt-get install -y \
         wget \
         perl gcc g++ make automake libtool autoconf m4 \
-        gcc-multilib
+        gcc-multilib \
+        bison
 
 RUN adduser --gecos 'PocketMine-MP' --disabled-password --home /pocketmine pocketmine
 
@@ -26,7 +27,7 @@ ENV GNUPGHOME /pocketmine
 
 ENV PHP_BINARY /pocketmine/PocketMine-MP/bin/php7/bin/php
 
-RUN cd PocketMine-MP && wget -q -O - https://get.pmmp.io | bash
+RUN cd PocketMine-MP && wget -q -O - https://get.pmmp.io | bash -s -
 
 EXPOSE 19132
 EXPOSE 19132/udp
