@@ -1,7 +1,7 @@
 docker-pocketmine-mp
 ====================
 
-Docker image for a PocketMine-MP server. Will download latest stable version of PocketMine-MP on startup using get.pmmp.io.
+Docker image for a PocketMine-MP server. Server for Minecraft PE (Pocket Edition). Will download latest stable version of PocketMine-MP on startup using get.pmmp.io.
 
 For Data Persistence crate directory for data files and run the container with option `-v`
 
