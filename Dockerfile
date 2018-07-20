@@ -26,7 +26,7 @@ ENV GNUPGHOME /pocketmine
 
 ENV PHP_BINARY /pocketmine/PocketMine-MP/bin/php7/bin/php
 
-RUN cd PocketMine-MP && wget -q -O - https://get.pmmp.io | bash
+RUN cd PocketMine-MP && wget -q -O - https://get.pmmp.io | bash -s -
 
 EXPOSE 19132
 EXPOSE 19132/udp
